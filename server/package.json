@@ -1,7 +1,7 @@
 {
   "name": "unitransfer-hub-server",
   "version": "1.0.0",
-  "description": "UniTransfer Hub 後端 API Server",
+  "description": "UniTransfer Hub 敺�蝡� API Server",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
