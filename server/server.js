@@ -1,8 +1,19 @@
 ﻿const express = require('express');
 const cors    = require('cors');
+const app = express(); // 1. 第一步：先讓 app 誕生！
+
+// 2. 第二步：才能幫 app 穿上 cors 裝備
+app.use(cors({
+    origin: [
+        'http://localhost:5173', 
+        'https://kind-beach-0cf998500.7.azurestaticapps.net'
+    ],
+    credentials: true
+}));
+
 const { initDB, getDB, saveDB } = require('./database');
 
-const app  = express();
+
 const PORT = 3000;
 
 app.use(cors({ origin: 'http://localhost:5173' }));
