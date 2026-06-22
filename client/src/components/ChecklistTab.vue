@@ -1,7 +1,7 @@
 ﻿<script setup>
 import { ref, computed, watch } from 'vue'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://unitransfer-api-fcu.azurewebsites.net'
 
 const selectedGrade = ref(null)
 const items         = ref([])

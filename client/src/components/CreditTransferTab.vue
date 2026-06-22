@@ -1,7 +1,7 @@
 ﻿<script setup>
 import { ref, onMounted } from 'vue'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://unitransfer-api-fcu.azurewebsites.net'
 
 const records     = ref([])
 const loading     = ref(false)
